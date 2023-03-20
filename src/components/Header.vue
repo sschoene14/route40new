@@ -66,7 +66,7 @@ export default {
       </div>
     </el-menu>
     <div v-if="this.showDropdown" class="dropdown">
-      <template v-for="rule git push -u origin mainin $router.options.routes" :key="rule.path">
+      <template v-for="rule in $router.options.routes" :key="rule.path">
       <div v-if="rule.name !== 'Home'" class="dropdown-item" @click="handleSelect(rule.path)">{{rule.name}}</div>
       </template>
     </div>
